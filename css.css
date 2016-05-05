@@ -1,81 +1,118 @@
+/* Environment */
 body {
-    color: #ddd;
-    font-size: 3rem;
-    text-align: center;
-    background: url('./images/debut_dark.png');
+    color      : #ddd;
+    font-size  : 3rem;
+    text-align : center;
+    background : url('./images/debut_dark.png');
 }
 
+
+/* Content */
+
 .header {
-    margin-top: 8rem;
-    color: #fff;
-    font-size: 8rem;
+    margin-top : 8rem;
+    color      : #fff;
+    font-size  : 8rem;
+    text-align : center;
+}
+
+.subtitle {
+    font-family : 'Fjalla One', sans-serif;
+    font-size   : 7rem;
+}
+
+.description {
+    text-align    : center;
+    font-family   : 'Droid Sans', sans-serif;
+    margin-top    : 0rem;
+    margin-bottom : 18rem;
+    line-height   : 1.5;
 }
 
 .ut {
-    font-family: 'Jura', sans-serif;
-    font-size: 10rem;
-}
-
-p {
-    text-align: center;
-    font-family: 'Droid Sans', sans-serif;
-    margin-top: 0rem;
-    margin-bottom: 18rem;
-    line-height: 1.5;
-}
-
-.header-align {
-    text-align: center;
-}
-
-#format-studio {
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 7rem;
+    font-family : 'Jura', sans-serif;
+    font-size   : 10rem;
 }
 
 .et {
-    font-family: 'Gloria Hallelujah', cursive;
-    font-size: 10rem;
+    font-family : 'Gloria Hallelujah', cursive;
+    font-size   : 10rem;
+}
+
+
+/* Footer */
+
+footer {
+    max-width : 420px;
+    margin    : auto;
 }
 
 .format-image {
-    margin-bottom: 2rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    font-family: 'Droid Sans';
-    font-size: 2rem;
-    text-align: center;
-    border: solid;
-    border-color: rgba(191, 114, 126, 0.8)
+    max-width    : 150px;
+    margin-left  : 2.5%;
+    margin-right : 2.5%;
+    font-family  : 'Droid Sans';
+    text-align   : center;
+    border       : solid;
+    border-color : rgba(191, 114, 126, 0.8);
 }
 
+.footer-image-ut {
+    float       : left;
+    margin-left : 5%;
+    width       : calc(50 - 5 - 2.5)%;
+    text-align  : center;
+}
+
+.footer-image-et {
+    float        : right;
+    width        : calc(50 - 5 - 2.5)%;
+    margin-right : 5%;
+    text-align   : center;
+}
+
+/* Beating animation */
 
 @keyframes beat {
   0%, 100% {
-    font-size: 1em;
-    color: #d14;
+    font-size : 1em;
+    color     : #d14;
   }
   20% {
-    font-size: 1.2em;
-    color: #d25;
+    font-size : 1.2em;
+    color     : #d25;
   }
   30% {
-    font-size: 1.15em;
-    color: #d36;
+    font-size : 1.15em;
+    color     : #d36;
   }
   40% {
-    font-size: 1.2em;
-    color: #d25;
+    font-size : 1.2em;
+    color     : #d25;
   }
 }
 
 .heart {
-  color: #f25;
-  animation: beat 1s infinite;
+  color     : #f25;
+  animation : beat 1s infinite;
 }
 
 .heart-container {
-    font-size: 0.8em;
-    display:inline-block;
-    width: 1.5em;
+    font-size : 0.8em;
+    display   : inline-block;
+    width     : 1.5em;
 }
+/* Media queries for small screens */
+
+@media (max-width: 420px) {
+    .header {
+        margin-top: 2rem;
+    }
+
+    .description {
+        margin-bottom: 8rem;
+    }
+}
+
+
+
